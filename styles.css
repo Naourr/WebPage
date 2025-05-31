@@ -1,0 +1,258 @@
+body {
+    background-color: rgb(10, 10, 10);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+.navbar {
+    background-color: rgb(15, 15, 15);
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+.navbar__container {
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    z-index: 1;
+    width: 100%;
+    padding: 0 50px; 
+}
+
+#navbar__logo {
+    background-color: rebeccapurple;
+    background-image: linear-gradient( to top, rgb(195, 0, 255) 25%,cyan 100% );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 2rem; 
+}
+
+.logo {
+    margin-right: 0.5rem;
+}
+
+.navbar__menu {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    text-align: center;
+}
+
+.navbar__item {
+    height: 80px;
+}
+
+.navbar__links {
+    color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    padding: 0 1rem;
+    height: 100%; /* gets */
+}
+
+.navbar__btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 1rem;
+}
+
+.button {
+   
+    border-radius: 4px;
+    background-color: purple;
+    color: white;
+    text-decoration: none;
+    height: 100%;
+    width: 100%;
+    padding: 10px 20px;
+}
+
+.button:hover {
+    background-color: rgb(73, 0, 73);
+    transition: all 0.3s ease;
+}
+    
+.navbar__links:hover {
+    color: cyan;
+    transition: all 0.3s ease;
+}
+
+@media screen and (max-width: 960px) {
+    .navbar__container {
+        display: flex;
+        justify-content: space-between;
+        height: 80px;
+        z-index: 1;
+        width: 100%;
+        padding: 0;
+    }
+
+    #navbar__logo {
+        padding: 25px;
+    }
+
+    .navbar__menu {
+        display: grid;
+        -ms-grid-column: auto;
+        margin: 0;
+        width: 100%;
+        position: absolute;
+        top: -1000px;
+        left: 0%;
+        height: 50vh;
+        z-index: -1;
+        transition: all 0.5s ease;
+        opacity: 0;
+    }
+
+    .navbar__menu.active {
+        background-color: rgb(15, 15, 15);
+        top: 100%;
+        transition: all 0.5s ease-in-out;
+        z-index: 99;
+        height: 50vh;
+        opacity: 1;
+    }
+
+    .navbar__btn  {
+        height: 80px;
+    }
+
+    .button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 60%;
+        margin: 5rem;
+    }
+   
+    #mobile-menu {
+        position:absolute;
+        top: 20%;
+        right: 5%;
+        transform: translate(5%, 20%);
+        
+    }
+
+    .navbar__toggle .bar {
+        width: 25px;
+        height: 3px;
+        margin: 5px auto;
+        display: block;
+        cursor: pointer;
+        background-color: #fff;
+        transition: all 0.3s ease-in-out;
+    }
+
+    #mobile-menu.is-active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    #mobile-menu.is-active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    #mobile-menu.is-active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+}
+
+.forgigatext {
+  
+}
+
+.forcirclegigachad {
+    background-color: rgb(10, 10, 10)black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 645px;
+    width: 500px;
+    position: absolute;
+    top: 100px;
+    left: 50px;
+}
+
+.forcircle {
+    z-index: 4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 5%;
+    left: 20%;
+}
+
+#circle {
+    border-radius: 50%;
+    height: 350px;
+    width: 350px;
+    background-image: linear-gradient( to bottom right, rebeccapurple, rgb(0, 0, 0));
+}
+
+.chadbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 13%;
+    z-index: 5;
+}
+
+.forquotechad {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 100px;
+    right: 50px;
+    height: 500px;
+    width: 700px;
+    background-color: rgb(10, 10, 10);
+    text-align: center;
+}
+
+#forquotes {
+    padding: auto 80px;
+}
+
+#quotes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 2.5rem;
+}
+
+#forchad {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 80%;
+    right: 0;
+}
+
+#chad {
+    color: rgb(124, 124, 124);
+    font-size: 1.3rem;
+}
